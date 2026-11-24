@@ -4,7 +4,7 @@ These scenarios describe the planned Signal Observatory replay of one recorded O
 
 ## 6.1 Replay a recording at its original pace
 
-A reviewer selects a trial and channel. The trial reader identifies the start of the musical excerpt after the cue clicks, maps audio and EEG sample positions to that common time zero, and records the timing uncertainty. If it cannot establish the alignment, it reports the missing evidence and stops before publishing samples.
+A reviewer selects a trial and channel. The trial reader uses the metadata revision for that participant to check which stimulus and cue were used in the listening trial. It locates the start of the music in the matched stimulus and EEG recording, maps both signals to that common time zero, and records the timing uncertainty. If the files disagree or the evidence cannot establish the start, the reader reports the problem and stops before publishing samples.
 
 At 1× speed, the publisher releases each chunk when the replay clock reaches the end of its recorded interval. Each chunk carries the trial, signal, sample range, and recording time. The sequence shows how the [building blocks](05-building-block-view.md) turn those chunks into a result the browser can read.
 
@@ -20,8 +20,12 @@ sequenceDiagram
             P->>A: Deliver timed audio samples
             A->>W: Envelope, confirmed onsets, and progress
         else EEG chunk
-            P->>E: Deliver timed EEG samples
-            E->>W: Channel values, timestamps, and progress
+            P->>E: Deliver EEG samples with their sample range
+            E->>E: Buffer by starting sample
+            opt Next expected EEG samples are available
+                E->>E: Process contiguous samples in recording order
+                E->>W: Channel values, timestamps, and progress
+            end
         end
         opt Both streams cover a window and its onsets are resolved
             W->>S: Store the completed window for the browser
@@ -29,11 +33,11 @@ sequenceDiagram
     end
 ```
 
-After both streams end, window assembly applies the offline reference’s rule for the final window. If an expected sample range is still missing, the run reports the gap and remains incomplete.
+After receiving the full expected audio range, the detector resolves pending onsets using the recorded samples. When both streams end, window assembly checks coverage against the expected ranges. It reports the signal and range for any gap and marks the run incomplete. With full coverage it publishes any remaining windows, including a partial one if the music ended between boundaries. [Window and storage interfaces](05-building-block-view.md#52-window-and-storage-interfaces)
 
 ## 6.2 Synchronize a window when EEG arrives late
 
-Event time is a sample’s position in the recording. Replay elapsed time measures how long the run has been playing. Window assembly tracks the contiguous sample range received for each signal, so a later chunk cannot close a gap left by an earlier one.
+Event time is a sample’s position in the recording. Replay elapsed time measures how long the run has been playing. When an EEG chunk arrives ahead of a gap, the EEG processor buffers it before filtering. Its filter state and the progress it reports to window assembly advance only when it can process the next contiguous samples in recording order.
 
 Suppose the window spans **1.500 to 2.000 seconds**, including its start and excluding its end. The times below illustrate one possible 1× replay.
 
@@ -41,7 +45,8 @@ Suppose the window spans **1.500 to 2.000 seconds**, including its start and exc
 | --- | --- | --- |
 | 2.000 s | The window reaches its scheduled end. Its final EEG chunk is delayed. | The window stays open. |
 | 2.080 s | Later audio samples let the detector confirm an onset at recording time 1.960 s. | The onset belongs to this window. EEG coverage is still incomplete. |
-| 2.250 s | The delayed EEG samples arrive and fill the gap. | Window assembly can now finalize the result with both signals on their original timeline. |
+| 2.100 s | The next EEG chunk arrives ahead of the delayed one. The EEG processor buffers it. | Filter state and reported EEG coverage stay at the start of the gap. |
+| 2.250 s | The delayed EEG chunk arrives. The processor filters it, then the buffered chunk, in recording order. | EEG now covers the window. With its onsets resolved, window assembly finalizes it. |
 | 2.300 s | The completed result becomes available to the browser. | The measured delay is **300 ms**, including detector look-ahead, the wait for EEG, and result delivery. |
 
 An onset at exactly 2.000 s belongs to the next window. At 1× speed the target is for at least 95% of window results to be available within one second of their scheduled end. [Quality goals](01-introduction-and-goals.md#12-quality-goals)

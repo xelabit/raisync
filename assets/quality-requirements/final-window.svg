@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="108" viewBox="0 0 252 108" role="img" aria-labelledby="title desc">
+<title id="title">Eighty milliseconds of look-ahead at the end of the excerpt</title>
+<desc id="desc">The fifth window ends at 2.2 seconds. The 2.05-second attack has a full 80 milliseconds of recorded look-ahead. The 2.18-second attack needs samples through 2.26 seconds and is discarded.</desc>
+<rect x="0" y="0" width="252" height="108" rx="4" fill="#ffffff" stroke="none"/>
+<g font-family="system-ui, sans-serif">
+<text x="5" y="16" fill="#263746" font-size="13" text-anchor="start" font-weight="600">Window 5 · 80 ms look-ahead</text>
+<rect x="64" y="23" width="130.0" height="61" rx="0" fill="#eef3f6" stroke="none"/>
+<path d="M194.0 23 H64 V84 H194.0" fill="none" stroke="#657987" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="194" y1="23" x2="194" y2="84" stroke="#657987" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="5" y="47" fill="#263746" font-size="13" text-anchor="start" font-weight="400">2.05 s</text>
+<text x="5" y="75" fill="#263746" font-size="13" text-anchor="start" font-weight="400">2.18 s</text>
+<line x1="96.5" y1="40" x2="96.5" y2="49" stroke="#a24812" stroke-width="1.6"/><circle cx="96.5" cy="40" r="2.7" fill="#a24812"/>
+<line x1="96.5" y1="40" x2="148.5" y2="40" stroke="#263746" stroke-width="1.6"/>
+<line x1="148.5" y1="36" x2="148.5" y2="44" stroke="#263746" stroke-width="1.4"/>
+<path d="M153.5 40 l3 3 l6 -7" fill="none" stroke="#147065" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="181" y1="68" x2="181" y2="77" stroke="#a24812" stroke-width="1.6"/>
+<line x1="181" y1="68" x2="194" y2="68" stroke="#263746" stroke-width="1.6"/>
+<line x1="194" y1="68" x2="233" y2="68" stroke="#536572" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle cx="181.0" cy="68" r="2.8" stroke="#a24812" stroke-width="1.5" fill="white"/>
+<path d="M230.0 65 l6 6 M230.0 71 l6 -6" fill="none" stroke="#a24812" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="64" y="101" fill="#263746" font-size="13" text-anchor="middle" font-weight="400">2.0 s</text>
+<text x="194.0" y="101" fill="#263746" font-size="13" text-anchor="middle" font-weight="400">End 2.2 s</text>
+</g>
+</svg>
