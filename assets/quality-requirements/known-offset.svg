@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="108" viewBox="0 0 252 108" role="img" aria-labelledby="title desc">
+<title id="title">Recover a known offset</title>
+<desc id="desc">Compare the interval from the audio onset to the EEG marker in the fixture and in the result. The recovered endpoint lies within the shaded timing resolution of the known endpoint.</desc>
+<rect x="0" y="0" width="252" height="108" rx="4" fill="#ffffff" stroke="none"/>
+<g font-family="system-ui, sans-serif">
+<text x="95" y="17" fill="#a24812" font-size="13" text-anchor="middle" font-weight="400">Audio onset</text>
+<text x="192" y="17" fill="#147065" font-size="13" text-anchor="middle" font-weight="400">EEG marker</text>
+<rect x="182" y="27" width="20" height="49" rx="0" fill="#eef3f6" stroke="none"/>
+<line x1="192" y1="27" x2="192" y2="76" stroke="#657987" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="5" y="45" fill="#263746" font-size="13" text-anchor="start" font-weight="400">Known</text>
+<line x1="95" y1="42" x2="192" y2="42" stroke="#657987" stroke-width="1.3"/>
+<line x1="95" y1="33" x2="95" y2="42" stroke="#a24812" stroke-width="1.6"/><circle cx="95" cy="33" r="2.7" fill="#a24812"/>
+<line x1="192" y1="33" x2="192" y2="42" stroke="#147065" stroke-width="1.6"/>
+<rect x="189.5" y="30.5" width="5" height="5" rx="0" fill="#147065" stroke="none"/>
+<text x="5" y="73" fill="#263746" font-size="13" text-anchor="start" font-weight="400">Observed</text>
+<line x1="95" y1="70" x2="196" y2="70" stroke="#657987" stroke-width="1.3"/>
+<line x1="95" y1="61" x2="95" y2="70" stroke="#a24812" stroke-width="1.6"/><circle cx="95" cy="61" r="2.7" fill="#a24812"/>
+<line x1="196" y1="61" x2="196" y2="70" stroke="#147065" stroke-width="1.6"/>
+<rect x="193.5" y="58.5" width="5" height="5" rx="0" fill="#147065" stroke="none"/>
+<text x="126" y="99" fill="#263746" font-size="13" text-anchor="middle" font-weight="600">Offset error ≤ fixture resolution</text>
+</g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="108" viewBox="0 0 252 108" role="img" aria-labelledby="title desc">
+<title id="title">Check both stimulus inputs against the P09 revision</title>
+<desc id="desc">For P09 the reader accepts v2 audio with v2 metadata. Swapping only the audio to v1 or only the metadata to v1 stops alignment.</desc>
+<rect x="0" y="0" width="252" height="108" rx="4" fill="#ffffff" stroke="none"/>
+<g font-family="system-ui, sans-serif">
+<text x="31" y="16" fill="#225da1" font-size="13" text-anchor="middle" font-weight="600">Audio</text>
+<text x="104" y="16" fill="#263746" font-size="13" text-anchor="middle" font-weight="600">Metadata</text>
+<text x="203" y="16" fill="#263746" font-size="13" text-anchor="middle" font-weight="600">P09 · v2</text>
+<rect x="13" y="24" width="36" height="19" rx="3" fill="#eef3f6" stroke="#b8c5cd"/>
+<text x="31" y="38" fill="#263746" font-size="12" text-anchor="middle" font-weight="400">v2</text>
+<rect x="86" y="24" width="36" height="19" rx="3" fill="#eef3f6" stroke="#b8c5cd"/>
+<text x="104" y="38" fill="#263746" font-size="12" text-anchor="middle" font-weight="400">v2</text>
+<text x="67" y="38" fill="#536572" font-size="13" text-anchor="middle" font-weight="400">+</text>
+<path d="M133 34 h25 m-4 -4 l4 4 l-4 4" fill="none" stroke="#657987" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M168 34 l3 3 l6 -7" fill="none" stroke="#263746" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="184" y="38" fill="#263746" font-size="13" text-anchor="start" font-weight="400">Accept</text>
+<rect x="13" y="51" width="36" height="19" rx="3" fill="#faeeec" stroke="#995245"/>
+<text x="31" y="65" fill="#263746" font-size="12" text-anchor="middle" font-weight="400">v1</text>
+<rect x="86" y="51" width="36" height="19" rx="3" fill="#eef3f6" stroke="#b8c5cd"/>
+<text x="104" y="65" fill="#263746" font-size="12" text-anchor="middle" font-weight="400">v2</text>
+<text x="67" y="65" fill="#536572" font-size="13" text-anchor="middle" font-weight="400">+</text>
+<path d="M133 61 h25 m-4 -4 l4 4 l-4 4" fill="none" stroke="#657987" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M169 57 l7 7 m0 -7 l-7 7" fill="none" stroke="#263746" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="184" y="65" fill="#263746" font-size="13" text-anchor="start" font-weight="400">Stop</text>
+<rect x="13" y="78" width="36" height="19" rx="3" fill="#eef3f6" stroke="#b8c5cd"/>
+<text x="31" y="92" fill="#263746" font-size="12" text-anchor="middle" font-weight="400">v2</text>
+<rect x="86" y="78" width="36" height="19" rx="3" fill="#faeeec" stroke="#995245"/>
+<text x="104" y="92" fill="#263746" font-size="12" text-anchor="middle" font-weight="400">v1</text>
+<text x="67" y="92" fill="#536572" font-size="13" text-anchor="middle" font-weight="400">+</text>
+<path d="M133 88 h25 m-4 -4 l4 4 l-4 4" fill="none" stroke="#657987" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M169 84 l7 7 m0 -7 l-7 7" fill="none" stroke="#263746" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="184" y="92" fill="#263746" font-size="13" text-anchor="start" font-weight="400">Stop</text>
+</g>
+</svg>

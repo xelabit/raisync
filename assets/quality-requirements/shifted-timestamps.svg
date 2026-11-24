@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="108" viewBox="0 0 252 108" role="img" aria-labelledby="title desc">
+<title id="title">Moving sample times changes the comparison</title>
+<desc id="desc">EEG and envelope timestamps are shifted in separate tests. Each point moves to the right inside its window while its value stays fixed. Both shifts exceed the timestamp tolerance.</desc>
+<rect x="0" y="0" width="252" height="108" rx="4" fill="#ffffff" stroke="none"/>
+<g font-family="system-ui, sans-serif">
+<circle cx="57" cy="12" r="2.8" stroke="#263746" stroke-width="1.5" fill="white"/>
+<text x="65" y="16" fill="#263746" font-size="13" text-anchor="start" font-weight="400">Reference</text>
+<circle cx="151" cy="12" r="2.8" stroke="#263746" stroke-width="1.5" fill="#263746"/>
+<text x="159" y="16" fill="#263746" font-size="13" text-anchor="start" font-weight="400">Shifted</text>
+<text x="5" y="40" fill="#147065" font-size="13" text-anchor="start" font-weight="400">EEG</text>
+<rect x="77" y="23" width="164" height="25" rx="0" fill="#eef3f6" stroke="none"/>
+<path d="M241 23 H77 V48 H241" fill="none" stroke="#657987" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="241" y1="23" x2="241" y2="48" stroke="#657987" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="91" y1="37" x2="113" y2="37" stroke="#147065" stroke-width="1.1"/>
+<path d="M102 34.5 l3 2.5 l-3 2.5" fill="none" stroke="#147065" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="91" cy="37" r="2.8" stroke="#147065" stroke-width="1.5" fill="white"/>
+<circle cx="113" cy="37" r="2.8" stroke="#147065" stroke-width="1.5" fill="#147065"/>
+<line x1="144" y1="31" x2="166" y2="31" stroke="#147065" stroke-width="1.1"/>
+<path d="M155 28.5 l3 2.5 l-3 2.5" fill="none" stroke="#147065" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="144" cy="31" r="2.8" stroke="#147065" stroke-width="1.5" fill="white"/>
+<circle cx="166" cy="31" r="2.8" stroke="#147065" stroke-width="1.5" fill="#147065"/>
+<line x1="197" y1="40" x2="219" y2="40" stroke="#147065" stroke-width="1.1"/>
+<path d="M208 37.5 l3 2.5 l-3 2.5" fill="none" stroke="#147065" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="197" cy="40" r="2.8" stroke="#147065" stroke-width="1.5" fill="white"/>
+<circle cx="219" cy="40" r="2.8" stroke="#147065" stroke-width="1.5" fill="#147065"/>
+<text x="5" y="72" fill="#225da1" font-size="13" text-anchor="start" font-weight="400">Envelope</text>
+<rect x="77" y="55" width="164" height="25" rx="0" fill="#eef3f6" stroke="none"/>
+<path d="M241 55 H77 V80 H241" fill="none" stroke="#657987" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="241" y1="55" x2="241" y2="80" stroke="#657987" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="91" y1="61" x2="113" y2="61" stroke="#225da1" stroke-width="1.1"/>
+<path d="M102 58.5 l3 2.5 l-3 2.5" fill="none" stroke="#225da1" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="91" cy="61" r="2.8" stroke="#225da1" stroke-width="1.5" fill="white"/>
+<circle cx="113" cy="61" r="2.8" stroke="#225da1" stroke-width="1.5" fill="#225da1"/>
+<line x1="144" y1="68" x2="166" y2="68" stroke="#225da1" stroke-width="1.1"/>
+<path d="M155 65.5 l3 2.5 l-3 2.5" fill="none" stroke="#225da1" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="144" cy="68" r="2.8" stroke="#225da1" stroke-width="1.5" fill="white"/>
+<circle cx="166" cy="68" r="2.8" stroke="#225da1" stroke-width="1.5" fill="#225da1"/>
+<line x1="197" y1="72" x2="219" y2="72" stroke="#225da1" stroke-width="1.1"/>
+<path d="M208 69.5 l3 2.5 l-3 2.5" fill="none" stroke="#225da1" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="197" cy="72" r="2.8" stroke="#225da1" stroke-width="1.5" fill="white"/>
+<circle cx="219" cy="72" r="2.8" stroke="#225da1" stroke-width="1.5" fill="#225da1"/>
+<text x="126" y="100" fill="#263746" font-size="13" text-anchor="middle" font-weight="400">Shift exceeds time tolerance</text>
+</g>
+</svg>

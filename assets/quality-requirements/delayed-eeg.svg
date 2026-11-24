@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="108" viewBox="0 0 252 108" role="img" aria-labelledby="title desc">
+<title id="title">Buffer the successor until the delayed EEG arrives</title>
+<desc id="desc">The later EEG chunk waits for the delayed interval. An impulse in the recovered input produces matching replay and offline filter responses across the chunk boundary.</desc>
+<rect x="0" y="0" width="252" height="108" rx="4" fill="#ffffff" stroke="none"/>
+<g font-family="system-ui, sans-serif">
+<text x="5" y="19" fill="#263746" font-size="13" text-anchor="start" font-weight="400">EEG chunks</text>
+<rect x="84" y="3" width="77" height="22" rx="3" fill="none" stroke="#657987" stroke-dasharray="3 3"/>
+<rect x="165" y="3" width="78" height="22" rx="3" fill="#e8f4f1" stroke="none"/>
+<text x="123" y="19" fill="#536572" font-size="12" text-anchor="middle" font-weight="400">Delayed</text>
+<text x="204" y="19" fill="#147065" font-size="12" text-anchor="middle" font-weight="400">Buffered</text>
+<line x1="163" y1="25" x2="163" y2="101" stroke="#657987" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="5" y="47" fill="#147065" font-size="13" text-anchor="start" font-weight="400">EEG input</text>
+<path d="M84 46 H148 L150 30 L152 46 H243" fill="none" stroke="#147065" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="5" y="73" fill="#263746" font-size="13" text-anchor="start" font-weight="400">Replay filter</text>
+<path d="M84 72 H148 L150 55 C158 60 170 65 179 67 S207 71 243 72" fill="none" stroke="#147065" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="5" y="99" fill="#263746" font-size="13" text-anchor="start" font-weight="400">Offline filter</text>
+<path d="M84 98 H148 L150 81 C158 86 170 91 179 93 S207 97 243 98" fill="none" stroke="#147065" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
